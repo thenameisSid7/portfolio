@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+<div class="mt-5">
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/sid.jpg' %}"
+      alt="ProfilePic"
+      class="img-thumbnail"
+      width="200px"
+      height="130px"
+    />
+  </div>
+  <div class="mt-5 text-white mx-5 text-justify">
+    <h2 class="font-weight-bold st-font">Hello,</h2>
+    <div class="px-4" style="line-height: 2rem">
+      <p style="text-indent: 70px">
+        I am <b class="text-warning">Siddhartha Singh</b>, a final year student
+        from <b class="font-weight-bold">NIT Hamirpur</b>(Electronics and
+        Communication Engineering). I'm a passionate Django web developer with a
+        strong foundation in Python and other web development technologies. I
+        have worked on several notable projects, including a complex e-commerce
+        platform. My skill set includes proficiency in HTML, CSS, JavaScript,
+        and SQL. Also, recently I got 99.2%(All India Rank 1800) in CAT 2022.<br /><br />
+        I'm excited to begin my journey as a web developer and eager to work on
+        challenging projects to enhance my skills. As a quick learner, I'm open
+        to learning new tools and techniques to develop efficient and scalable
+        web applications. I'm excited to join a team of experienced developers
+        and make a meaningful contribution to the world of web development.
+        Let's collaborate and create something amazing
+      </p>
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5"
+      >Hire Me</a
+    >
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3"
+      >Contact Me</a
+    >
+  </div>
+</div>
+{% endblock content %}
