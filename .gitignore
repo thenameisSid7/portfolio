@@ -5,6 +5,9 @@
 .AppleDouble
 .LSOverride
 
+# virtual env
+test
+
 # Icon must end with two \r
 Icon
 
